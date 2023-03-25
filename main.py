@@ -1,11 +1,10 @@
+import random
+import pandas as pd
 from fastapi import FastAPI
 
 app = FastAPI()
 
-
-import random
-import pandas as pd
-
+# Load csv file
 nba = pd.read_csv("Words.csv")
 
 
