@@ -13,6 +13,7 @@ origins = [
     "http://localhost:8080",
     "http://0.0.0.0:10000",
     "http://0.0.0.0:8080",
+    "https://daily-words.onrender.com",
 ]
 
 app.add_middleware(
