@@ -11,10 +11,7 @@ origins = [
     "https://localhost.tiangolo.com",
     "http://localhost",
     "http://localhost:8080",
-    "http://localhost:5173",
-    "http://0.0.0.0:8000",
 ]
-
 
 app.add_middleware(
     CORSMiddleware,
@@ -23,6 +20,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 
 # Load csv file
