@@ -6,15 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = [
-    "http://localhost.tiangolo.com",
-    "https://localhost.tiangolo.com",
-    "http://localhost",
-    "http://localhost:8080",
-    "http://0.0.0.0:10000",
-    "http://0.0.0.0:8080",
-    "https://daily-words.onrender.com",
-]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
